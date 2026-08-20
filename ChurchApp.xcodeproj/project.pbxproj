@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FF35B1B8FEF49D5C534A3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C70CC588E653C54B605FF41 /* Assets.xcassets */; };
+		47E24F373A4E414AB847D2EC /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00741367B27E4987E41F2407 /* AudioPlayerManager.swift */; };
+		51BADEAC91ECF36462CE968C /* MediaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9683BAB0B67A9136027E069D /* MediaRowView.swift */; };
+		5B7A7864F0E3BA7B216DB4A2 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 992B16DF045A1248433B478B /* content.json */; };
+		6542804FA9E952E4FA4A1B68 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C3D6A4BE52FEE8AA0EDBD800 /* Localizable.xcstrings */; };
+		6B278F7BDF2AFF7AE7DA29CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909C2CE5162395A01FBF9C /* HomeView.swift */; };
+		7937F39F673EB613B71565F8 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25132300D64EC005CCD353FB /* DownloadsView.swift */; };
+		998FC93C5C1F38FCCF3F5BEA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9487D74E00C37D32D43283C /* PlayerView.swift */; };
+		A0C8D3D15CDA1ED71E3CBF8E /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */; };
+		A34C3957429CF6DA48A2C6B2 /* ChurchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B3E520C7B1C848014D5830 /* ChurchAppApp.swift */; };
+		BC85D5F7B152E22F1A2E2768 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFAE3F663E24EF8666398D5 /* RootView.swift */; };
+		C9FF7FC51C8EEC0C4918C88D /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECE7097C28D9A4B8AA04CFB /* ContentRepository.swift */; };
+		CF70D749ED5F69C9615FAA47 /* MiniPlayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4274955BC6DBC82A8176D6 /* MiniPlayerBar.swift */; };
+		EAD17C653E3E24772A3EF6FF /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0576F7E72BD9593E868224 /* MediaItem.swift */; };
+		FF132A8B98CA35AE41505BF6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2148102BFFB6D55846896 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00741367B27E4987E41F2407 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		0ECE7097C28D9A4B8AA04CFB /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		25132300D64EC005CCD353FB /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		28B3E520C7B1C848014D5830 /* ChurchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchAppApp.swift; sourceTree = "<group>"; };
+		35909C2CE5162395A01FBF9C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		62DCFED2096097DA7DB63FB1 /* ChurchApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ChurchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFAE3F663E24EF8666398D5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		7F0576F7E72BD9593E868224 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		8C70CC588E653C54B605FF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CA2148102BFFB6D55846896 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9683BAB0B67A9136027E069D /* MediaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRowView.swift; sourceTree = "<group>"; };
+		992B16DF045A1248433B478B /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
+		9A4274955BC6DBC82A8176D6 /* MiniPlayerBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerBar.swift; sourceTree = "<group>"; };
+		C3D6A4BE52FEE8AA0EDBD800 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		D9487D74E00C37D32D43283C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02CDCAEAD9BE079E11E6C014 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C70CC588E653C54B605FF41 /* Assets.xcassets */,
+				992B16DF045A1248433B478B /* content.json */,
+				C3D6A4BE52FEE8AA0EDBD800 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B6CC302AC824A2296CD232 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F0576F7E72BD9593E868224 /* MediaItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44A198030CC65B5B89206156 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7A244DC810FB2158BB7745C /* Downloads */,
+				DE48FE48DBB6FE796B7508FC /* Home */,
+				B6F8A5BBC22268B6C3DF95C0 /* Player */,
+				702637B68856B698F58D62E2 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55E5EEA355BCC25F45521C16 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0ECE7097C28D9A4B8AA04CFB /* ContentRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5647082321FB491E58CFE47A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62DCFED2096097DA7DB63FB1 /* ChurchApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		702637B68856B698F58D62E2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8CA2148102BFFB6D55846896 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8202ED5BCC8651EA647C3F27 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				863239D9E1C83C65ED1CD3FF /* App */,
+				55E5EEA355BCC25F45521C16 /* Data */,
+				29B6CC302AC824A2296CD232 /* Models */,
+				E326DF9459305060D340429E /* Services */,
+				44A198030CC65B5B89206156 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		863239D9E1C83C65ED1CD3FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				28B3E520C7B1C848014D5830 /* ChurchAppApp.swift */,
+				6EFAE3F663E24EF8666398D5 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B6F8A5BBC22268B6C3DF95C0 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				9A4274955BC6DBC82A8176D6 /* MiniPlayerBar.swift */,
+				D9487D74E00C37D32D43283C /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		B7A244DC810FB2158BB7745C /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				25132300D64EC005CCD353FB /* DownloadsView.swift */,
+			);
+			path = Downloads;
+			sourceTree = "<group>";
+		};
+		D5A0460A0C365CA163721254 = {
+			isa = PBXGroup;
+			children = (
+				02CDCAEAD9BE079E11E6C014 /* Resources */,
+				8202ED5BCC8651EA647C3F27 /* Sources */,
+				5647082321FB491E58CFE47A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE48FE48DBB6FE796B7508FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				35909C2CE5162395A01FBF9C /* HomeView.swift */,
+				9683BAB0B67A9136027E069D /* MediaRowView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E326DF9459305060D340429E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00741367B27E4987E41F2407 /* AudioPlayerManager.swift */,
+				FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EE182A8D2960ADCF1D0DDFA /* ChurchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0143321C22E7B31AAA0743F /* Build configuration list for PBXNativeTarget "ChurchApp" */;
+			buildPhases = (
+				3F88526693E883141D356867 /* Sources */,
+				998286420B8130744BBA840B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChurchApp;
+			packageProductDependencies = (
+			);
+			productName = ChurchApp;
+			productReference = 62DCFED2096097DA7DB63FB1 /* ChurchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4E7F833D9274D66AFF7E18B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 22207CFF7B0787493A2EF735 /* Build configuration list for PBXProject "ChurchApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = D5A0460A0C365CA163721254;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5647082321FB491E58CFE47A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EE182A8D2960ADCF1D0DDFA /* ChurchApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		998286420B8130744BBA840B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF35B1B8FEF49D5C534A3C2 /* Assets.xcassets in Resources */,
+				6542804FA9E952E4FA4A1B68 /* Localizable.xcstrings in Resources */,
+				5B7A7864F0E3BA7B216DB4A2 /* content.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F88526693E883141D356867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E24F373A4E414AB847D2EC /* AudioPlayerManager.swift in Sources */,
+				A34C3957429CF6DA48A2C6B2 /* ChurchAppApp.swift in Sources */,
+				C9FF7FC51C8EEC0C4918C88D /* ContentRepository.swift in Sources */,
+				A0C8D3D15CDA1ED71E3CBF8E /* DownloadManager.swift in Sources */,
+				7937F39F673EB613B71565F8 /* DownloadsView.swift in Sources */,
+				6B278F7BDF2AFF7AE7DA29CB /* HomeView.swift in Sources */,
+				EAD17C653E3E24772A3EF6FF /* MediaItem.swift in Sources */,
+				51BADEAC91ECF36462CE968C /* MediaRowView.swift in Sources */,
+				CF70D749ED5F69C9615FAA47 /* MiniPlayerBar.swift in Sources */,
+				998FC93C5C1F38FCCF3F5BEA /* PlayerView.swift in Sources */,
+				BC85D5F7B152E22F1A2E2768 /* RootView.swift in Sources */,
+				FF132A8B98CA35AE41505BF6 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58A952D6289072EEC76A11A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Generated/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourchurch.churchapp;
+				PRODUCT_NAME = "Church App";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		601D80A8E582603DFD35784D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Generated/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourchurch.churchapp;
+				PRODUCT_NAME = "Church App";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		92B63F26C44533C41A4A9DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BB495CC2DAB56893747FAF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22207CFF7B0787493A2EF735 /* Build configuration list for PBXProject "ChurchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB495CC2DAB56893747FAF97 /* Debug */,
+				92B63F26C44533C41A4A9DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B0143321C22E7B31AAA0743F /* Build configuration list for PBXNativeTarget "ChurchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A952D6289072EEC76A11A8 /* Debug */,
+				601D80A8E582603DFD35784D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4E7F833D9274D66AFF7E18B /* Project object */;
+}

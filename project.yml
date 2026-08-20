@@ -1,0 +1,48 @@
+name: ChurchApp
+options:
+  bundleIdPrefix: com.yourchurch
+  developmentLanguage: en
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    ENABLE_PREVIEWS: "YES"
+targets:
+  ChurchApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Resources
+    info:
+      path: Generated/Info.plist
+      properties:
+        CFBundleDisplayName: "Church App"
+        UILaunchScreen: {}
+        UIBackgroundModes:
+          - audio
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourchurch.churchapp
+        PRODUCT_NAME: "Church App"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SUPPORTS_MACCATALYST: "NO"
+    schemes: {}
+schemes:
+  ChurchApp:
+    build:
+      targets:
+        ChurchApp: all
+    run:
+      config: Debug
+    archive:
+      config: Release

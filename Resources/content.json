@@ -1,0 +1,103 @@
+{
+  "updatedAt": "2026-08-20T00:00:00Z",
+  "items": [
+    {
+      "id": "s001",
+      "type": "sermon",
+      "title": "The Unsearchable Riches of Christ",
+      "speaker": "Pastor John Lee",
+      "series": "West Coast Conference 2026",
+      "category": "Conference Messages",
+      "dateAdded": "2026-08-18T00:00:00Z",
+      "durationSeconds": 2730,
+      "audioURL": "https://download.samplelib.com/mp3/sample-15s.mp3",
+      "imageURL": null,
+      "language": "en",
+      "isRecommended": true
+    },
+    {
+      "id": "s002",
+      "type": "sermon",
+      "title": "撒迦利亚书：不是倚靠势力",
+      "speaker": "刘志雄",
+      "series": "ECTC 教会周三查经",
+      "category": "Bible Study",
+      "dateAdded": "2026-08-17T00:00:00Z",
+      "durationSeconds": 3120,
+      "audioURL": "https://download.samplelib.com/mp3/sample-15s.mp3",
+      "imageURL": null,
+      "language": "zh",
+      "isRecommended": true
+    },
+    {
+      "id": "s003",
+      "type": "sermon",
+      "title": "驴子：耶和华的介入",
+      "speaker": "刘志雄",
+      "series": "主日信息",
+      "category": "Sunday Message",
+      "dateAdded": "2026-08-10T00:00:00Z",
+      "durationSeconds": 2600,
+      "audioURL": "https://download.samplelib.com/mp3/sample-15s.mp3",
+      "imageURL": null,
+      "language": "zh",
+      "isRecommended": false
+    },
+    {
+      "id": "s004",
+      "type": "sermon",
+      "title": "Receiving and Becoming Blessings",
+      "speaker": "Pastor Grace Yu",
+      "series": "SVC 2026",
+      "category": "Conference Messages",
+      "dateAdded": "2026-08-05T00:00:00Z",
+      "durationSeconds": 2400,
+      "audioURL": "https://download.samplelib.com/mp3/sample-15s.mp3",
+      "imageURL": null,
+      "language": "en",
+      "isRecommended": false
+    },
+    {
+      "id": "n001",
+      "type": "song",
+      "title": "Amazing Grace",
+      "speaker": "Church Choir",
+      "series": null,
+      "category": "Hymns",
+      "dateAdded": "2026-08-12T00:00:00Z",
+      "durationSeconds": 240,
+      "audioURL": "https://download.samplelib.com/mp3/sample-9s.mp3",
+      "imageURL": null,
+      "language": "en",
+      "isRecommended": true
+    },
+    {
+      "id": "n002",
+      "type": "song",
+      "title": "奇异恩典",
+      "speaker": "诗班",
+      "series": null,
+      "category": "诗歌",
+      "dateAdded": "2026-08-11T00:00:00Z",
+      "durationSeconds": 245,
+      "audioURL": "https://download.samplelib.com/mp3/sample-9s.mp3",
+      "imageURL": null,
+      "language": "zh",
+      "isRecommended": false
+    },
+    {
+      "id": "n003",
+      "type": "song",
+      "title": "How Great Thou Art",
+      "speaker": "Church Choir",
+      "series": null,
+      "category": "Hymns",
+      "dateAdded": "2026-08-02T00:00:00Z",
+      "durationSeconds": 260,
+      "audioURL": "https://download.samplelib.com/mp3/sample-9s.mp3",
+      "imageURL": null,
+      "language": "en",
+      "isRecommended": false
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "About" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "About" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "关于" } }
+      }
+    },
+    "Church App" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Church App" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Church App" } }
+      }
+    },
+    "Content" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Content" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "内容" } }
+      }
+    },
+    "Downloads" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Downloads" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "下载" } }
+      }
+    },
+    "English" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "English" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "English" } }
+      }
+    },
+    "Home" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "首页" } }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "语言" } }
+      }
+    },
+    "Last updated: %@" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Last updated: %@" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "上次更新：%@" } }
+      }
+    },
+    "Me" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Me" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "我的" } }
+      }
+    },
+    "My Downloads" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "My Downloads" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "我的下载" } }
+      }
+    },
+    "New sermons and songs added by the church appear here automatically the next time content is refreshed." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New sermons and songs added by the church appear here automatically the next time content is refreshed." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "教会新添加的讲道和诗歌会在下次刷新内容时自动显示在这里。" } }
+      }
+    },
+    "No downloads yet" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No downloads yet" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂无下载" } }
+      }
+    },
+    "No items yet" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No items yet" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂无内容" } }
+      }
+    },
+    "Recent Updates" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Recent Updates" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "最近更新" } }
+      }
+    },
+    "Recommended" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Recommended" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "推荐" } }
+      }
+    },
+    "Refresh Content" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Refresh Content" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "刷新内容" } }
+      }
+    },
+    "Search" : {
+      "comment" : "Search field placeholder",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Search" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "搜索" } }
+      }
+    },
+    "Sermons" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sermons" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "讲道" } }
+      }
+    },
+    "Songs" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Songs" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "诗歌" } }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Version" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "版本" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
