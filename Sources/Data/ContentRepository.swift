@@ -21,7 +21,7 @@ final class ContentRepository: ObservableObject {
     /// Point this at a JSON file you control (GitHub raw URL, S3/Cloud Storage
     /// public object, a Google Sheet published as JSON, etc). Leave it nil to
     /// run entirely off the bundled file.
-    static let remoteManifestURL: URL? = URL(string: "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/content.json?alt=media&token=a4cb66e6-4ee2-4153-940a-f23e178cd2f4")
+    static let remoteManifestURL: URL? = URL(string: "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/content.json?alt=media")
 
     @Published private(set) var items: [MediaItem] = []
     @Published private(set) var seriesInfo: [PodcastSeriesInfo] = []
