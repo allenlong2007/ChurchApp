@@ -1,6 +1,6 @@
 name: ChurchApp
 options:
-  bundleIdPrefix: com.yourchurch
+  bundleIdPrefix: org.sjca
   developmentLanguage: en
   deploymentTarget:
     iOS: "16.0"
@@ -19,23 +19,27 @@ targets:
     info:
       path: Generated/Info.plist
       properties:
-        CFBundleDisplayName: "Church App"
+        CFBundleDisplayName: "拾穗"
         UILaunchScreen: {}
         UIBackgroundModes:
           - audio
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
         ITSAppUsesNonExemptEncryption: false
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.yourchurch.churchapp
-        PRODUCT_NAME: "Church App"
+        PRODUCT_BUNDLE_IDENTIFIER: org.sjca.app
+        PRODUCT_NAME: "SJCA"
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
         TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         SUPPORTS_MACCATALYST: "NO"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: MS583APS4H
     schemes: {}
 schemes:
   ChurchApp:

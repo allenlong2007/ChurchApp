@@ -1,127 +1,576 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "About" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "About" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "关于" } }
+  "sourceLanguage": "en",
+  "strings": {
+    " book": {
+      "comment": "Singular suffix for a parent podcast folder's sub-folder count, e.g. \"5 books\"",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " book"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本"
+          }
+        }
       }
     },
-    "Church App" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Church App" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Church App" } }
+    " books": {
+      "comment": "Plural suffix for a parent podcast folder's sub-folder count, e.g. \"5 books\"",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " books"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本"
+          }
+        }
       }
     },
-    "Content" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Content" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "内容" } }
+    " episode": {
+      "comment": "Singular suffix in podcast folder subtitle: \"By {speaker} · 1 episode\"",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " episode"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集"
+          }
+        }
       }
     },
-    "Downloads" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Downloads" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "下载" } }
+    " episodes": {
+      "comment": "Plural suffix in podcast folder subtitle: \"By {speaker} · {n} episodes\"",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " episodes"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "集"
+          }
+        }
       }
     },
-    "English" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "English" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "English" } }
+    "About": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于"
+          }
+        }
       }
     },
-    "Home" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "首页" } }
+    "By": {
+      "comment": "Podcast folder subtitle prefix, e.g. \"By {speaker} · {n} episodes\"",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "讲员"
+          }
+        }
       }
     },
-    "Language" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "语言" } }
+    "Church App": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Church App"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Church App"
+          }
+        }
       }
     },
-    "Last updated: %@" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Last updated: %@" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "上次更新：%@" } }
+    "Clear": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除"
+          }
+        }
       }
     },
-    "Me" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Me" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "我的" } }
+    "Content": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Content"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内容"
+          }
+        }
       }
     },
-    "My Downloads" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "My Downloads" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "我的下载" } }
+    "Downloads": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloads"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载"
+          }
+        }
       }
     },
-    "New sermons and songs added by the church appear here automatically the next time content is refreshed." : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "New sermons and songs added by the church appear here automatically the next time content is refreshed." } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "教会新添加的讲道和诗歌会在下次刷新内容时自动显示在这里。" } }
+    "English": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English"
+          }
+        }
       }
     },
-    "No downloads yet" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No downloads yet" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂无下载" } }
+    "Everything you've played, with where you left off.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything you've played, with where you left off."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你收听过的内容，以及每次退出的位置。"
+          }
+        }
       }
     },
-    "No items yet" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No items yet" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂无内容" } }
+    "Featured": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Featured"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "精选"
+          }
+        }
       }
     },
-    "Recent Updates" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Recent Updates" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "最近更新" } }
+    "Get notified when new podcasts or hymns are added. This is checked whenever the app is opened, refreshed, or you pull to refresh -- it can't notify you while the app is fully closed.": {},
+    "History": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "History"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "历史"
+          }
+        }
       }
     },
-    "Recommended" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Recommended" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "推荐" } }
+    "Home": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "首页"
+          }
+        }
       }
     },
-    "Refresh Content" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Refresh Content" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "刷新内容" } }
+    "Hymns": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hymns"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "诗歌"
+          }
+        }
       }
     },
-    "Search" : {
-      "comment" : "Search field placeholder",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Search" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "搜索" } }
+    "Language": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语言"
+          }
+        }
       }
     },
-    "Sermons" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sermons" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "讲道" } }
+    "Last updated: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last updated: %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上次更新：%@"
+          }
+        }
       }
     },
-    "Songs" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Songs" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "诗歌" } }
+    "Latest": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Latest"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最新"
+          }
+        }
       }
     },
-    "Version" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Version" } },
-        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "版本" } }
+    "Left off at": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Left off at"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放至"
+          }
+        }
       }
-    }
+    },
+    "Listening": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listening"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收听记录"
+          }
+        }
+      }
+    },
+    "Me": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Me"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的"
+          }
+        }
+      }
+    },
+    "More": {
+      "comment": "Featured tab section header for items after the top hero item",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多"
+          }
+        }
+      }
+    },
+    "My Downloads": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My Downloads"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的下载"
+          }
+        }
+      }
+    },
+    "New podcasts and hymns added by the church appear here automatically the next time content is refreshed.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New podcasts and hymns added by the church appear here automatically the next time content is refreshed."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "教会新添加的播客和诗歌会在下次刷新内容时自动显示在这里。"
+          }
+        }
+      }
+    },
+    "No downloads yet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No downloads yet"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无下载"
+          }
+        }
+      }
+    },
+    "No episodes yet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No episodes yet"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无节目"
+          }
+        }
+      }
+    },
+    "No items yet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No items yet"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无内容"
+          }
+        }
+      }
+    },
+    "No listening history yet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No listening history yet"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无收听记录"
+          }
+        }
+      }
+    },
+    "Notifications": {},
+    "Notifications for this app are turned off in iOS Settings. Turn them on there first, then come back and enable this.": {},
+    "Podcasts": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podcasts"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播客"
+          }
+        }
+      }
+    },
+    "Refresh Content": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh Content"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刷新内容"
+          }
+        }
+      }
+    },
+    "Search": {
+      "comment": "Search field placeholder",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜索"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本"
+          }
+        }
+      }
+    },
+    "Videos": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videos"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "视频"
+          }
+        }
+      }
+    },
+    "Your phone's Display Zoom setting makes everything on screen larger, including in this app, which can crop content at the edges. To see the app as designed, go to Settings > Display & Brightness > View and choose Standard.": {},
+    "·": {},
+    "中文": {}
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

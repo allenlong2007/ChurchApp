@@ -1,15 +1,16 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage("appLanguage") private var appLanguage: String = "en"
+    @AppStorage(appLanguageStorageKey) private var appLanguage: String = "en"
     @EnvironmentObject private var repository: ContentRepository
+    @State private var path = NavigationPath()
 
     private var appVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
     }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             Form {
                 Section {
                     Picker(selection: $appLanguage) {
@@ -21,6 +22,16 @@ struct SettingsView: View {
                     .pickerStyle(.segmented)
                 } header: {
                     Text("Language")
+                }
+
+                Section {
+                    NavigationLink(value: SettingsRoute.history) {
+                        Text("History")
+                    }
+                } header: {
+                    Text("Listening")
+                } footer: {
+                    Text("Everything you've played, with where you left off.")
                 }
 
                 Section {
@@ -43,7 +54,7 @@ struct SettingsView: View {
                 } header: {
                     Text("Content")
                 } footer: {
-                    Text("New sermons and songs added by the church appear here automatically the next time content is refreshed.")
+                    Text("New podcasts and hymns added by the church appear here automatically the next time content is refreshed.")
                 }
 
                 Section {
@@ -58,8 +69,28 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle(Text("Me"))
+            .navigationDestination(for: SettingsRoute.self) { route in
+                switch route {
+                case .history:
+                    HistoryView()
+                }
+            }
+            .navigationDestination(for: HistoryPlaybackRoute.self) { route in
+                if route.item.type == .video {
+                    VideoPlayerView(item: route.item, startAt: route.startAt)
+                } else {
+                    PlayerView(item: route.item, startAt: route.startAt)
+                }
+            }
+        }
+        .onDisappear {
+            path = NavigationPath()
         }
     }
+}
+
+private enum SettingsRoute: Hashable {
+    case history
 }
 
 #Preview {

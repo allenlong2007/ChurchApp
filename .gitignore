@@ -1,6 +1,14 @@
-.DS_Store
+# Xcode
 build/
 DerivedData/
 *.xcuserstate
 xcuserdata/
-.swiftpm/
+.DS_Store
+
+# Local working notes, not app source
+scratch/
+
+# Signed build artifacts (never belong in source control)
+*.ipa
+*.p12
+*.mobileprovision

@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0164602367841CCBDB6AFC8C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437B68B633E5F2D1FE81C35 /* NotificationManager.swift */; };
+		08598E390A3F40D8B547487A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880872DB120B6EC02F2CEFD8 /* HistoryView.swift */; };
+		0EA85EDDC1260A8B7153C29A /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175984DB975CEBCA93F4005 /* AppLanguage.swift */; };
+		11B8333AD0231E45AD15B8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58160962CC21E97AADFD6FB9 /* AppDelegate.swift */; };
+		19E59D1550237E97A77BD0E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9948786D34FBD7CE52D105 /* Theme.swift */; };
+		39ED871C1AC78B427EFC5583 /* PlaybackHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA13D09A655493E5D20D30 /* PlaybackHistoryManager.swift */; };
 		3FF35B1B8FEF49D5C534A3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C70CC588E653C54B605FF41 /* Assets.xcassets */; };
 		47E24F373A4E414AB847D2EC /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00741367B27E4987E41F2407 /* AudioPlayerManager.swift */; };
+		4F73A4A7DB4B4816C8283D20 /* View+OnChangeCompat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3869853665B758D8C9CC81D /* View+OnChangeCompat.swift */; };
 		51BADEAC91ECF36462CE968C /* MediaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9683BAB0B67A9136027E069D /* MediaRowView.swift */; };
 		5B7A7864F0E3BA7B216DB4A2 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 992B16DF045A1248433B478B /* content.json */; };
 		6542804FA9E952E4FA4A1B68 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C3D6A4BE52FEE8AA0EDBD800 /* Localizable.xcstrings */; };
+		6AFB381F149F2B68901DD9E2 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDB079666ABD1301DAC3EC /* VideoPlayerView.swift */; };
 		6B278F7BDF2AFF7AE7DA29CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909C2CE5162395A01FBF9C /* HomeView.swift */; };
+		6C9EE19309523D207CA453FC /* FeaturedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6FEAF29EC945EB3DFAC008 /* FeaturedCardView.swift */; };
+		6D68E816DF5C48C9A1450D37 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF72C843F039FBAB3FABF26 /* RemoteImage.swift */; };
 		7937F39F673EB613B71565F8 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25132300D64EC005CCD353FB /* DownloadsView.swift */; };
+		840D7E0FD8DDBCB63CADF4E8 /* NotificationSettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8370E780055F62C3C5C492C3 /* NotificationSettingsSheet.swift */; };
+		871A0328E3E19C817DB5AFFE /* PodcastFolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0177752BDA3C974DA055A9E8 /* PodcastFolders.swift */; };
 		998FC93C5C1F38FCCF3F5BEA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9487D74E00C37D32D43283C /* PlayerView.swift */; };
 		A0C8D3D15CDA1ED71E3CBF8E /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */; };
 		A34C3957429CF6DA48A2C6B2 /* ChurchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B3E520C7B1C848014D5830 /* ChurchAppApp.swift */; };
@@ -26,19 +38,31 @@
 
 /* Begin PBXFileReference section */
 		00741367B27E4987E41F2407 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		0177752BDA3C974DA055A9E8 /* PodcastFolders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastFolders.swift; sourceTree = "<group>"; };
 		0ECE7097C28D9A4B8AA04CFB /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		1175984DB975CEBCA93F4005 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		25132300D64EC005CCD353FB /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 		28B3E520C7B1C848014D5830 /* ChurchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchAppApp.swift; sourceTree = "<group>"; };
 		35909C2CE5162395A01FBF9C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		62DCFED2096097DA7DB63FB1 /* ChurchApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ChurchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF72C843F039FBAB3FABF26 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		4437B68B633E5F2D1FE81C35 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		58160962CC21E97AADFD6FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62DCFED2096097DA7DB63FB1 /* SJCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6FEAF29EC945EB3DFAC008 /* FeaturedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCardView.swift; sourceTree = "<group>"; };
 		6EFAE3F663E24EF8666398D5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		74DDB079666ABD1301DAC3EC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		7A9948786D34FBD7CE52D105 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7F0576F7E72BD9593E868224 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		8370E780055F62C3C5C492C3 /* NotificationSettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsSheet.swift; sourceTree = "<group>"; };
+		880872DB120B6EC02F2CEFD8 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		8C70CC588E653C54B605FF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA2148102BFFB6D55846896 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		94CA13D09A655493E5D20D30 /* PlaybackHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackHistoryManager.swift; sourceTree = "<group>"; };
 		9683BAB0B67A9136027E069D /* MediaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRowView.swift; sourceTree = "<group>"; };
 		992B16DF045A1248433B478B /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 		9A4274955BC6DBC82A8176D6 /* MiniPlayerBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerBar.swift; sourceTree = "<group>"; };
 		C3D6A4BE52FEE8AA0EDBD800 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		D3869853665B758D8C9CC81D /* View+OnChangeCompat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+OnChangeCompat.swift"; sourceTree = "<group>"; };
 		D9487D74E00C37D32D43283C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,20 +86,42 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		30118872A13D11F045CFC6EB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3EF72C843F039FBAB3FABF26 /* RemoteImage.swift */,
+				D3869853665B758D8C9CC81D /* View+OnChangeCompat.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		44A198030CC65B5B89206156 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7A9948786D34FBD7CE52D105 /* Theme.swift */,
 				B7A244DC810FB2158BB7745C /* Downloads */,
+				458E5B57A3396BC74B91427A /* History */,
 				DE48FE48DBB6FE796B7508FC /* Home */,
 				B6F8A5BBC22268B6C3DF95C0 /* Player */,
 				702637B68856B698F58D62E2 /* Settings */,
+				30118872A13D11F045CFC6EB /* Shared */,
+				803C545870589593DC648E77 /* Video */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		458E5B57A3396BC74B91427A /* History */ = {
+			isa = PBXGroup;
+			children = (
+				880872DB120B6EC02F2CEFD8 /* HistoryView.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		55E5EEA355BCC25F45521C16 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				1175984DB975CEBCA93F4005 /* AppLanguage.swift */,
 				0ECE7097C28D9A4B8AA04CFB /* ContentRepository.swift */,
 			);
 			path = Data;
@@ -84,7 +130,7 @@
 		5647082321FB491E58CFE47A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				62DCFED2096097DA7DB63FB1 /* ChurchApp.app */,
+				62DCFED2096097DA7DB63FB1 /* SJCA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +141,14 @@
 				8CA2148102BFFB6D55846896 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		803C545870589593DC648E77 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				74DDB079666ABD1301DAC3EC /* VideoPlayerView.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		8202ED5BCC8651EA647C3F27 /* Sources */ = {
@@ -112,6 +166,7 @@
 		863239D9E1C83C65ED1CD3FF /* App */ = {
 			isa = PBXGroup;
 			children = (
+				58160962CC21E97AADFD6FB9 /* AppDelegate.swift */,
 				28B3E520C7B1C848014D5830 /* ChurchAppApp.swift */,
 				6EFAE3F663E24EF8666398D5 /* RootView.swift */,
 			);
@@ -147,8 +202,11 @@
 		DE48FE48DBB6FE796B7508FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6E6FEAF29EC945EB3DFAC008 /* FeaturedCardView.swift */,
 				35909C2CE5162395A01FBF9C /* HomeView.swift */,
 				9683BAB0B67A9136027E069D /* MediaRowView.swift */,
+				8370E780055F62C3C5C492C3 /* NotificationSettingsSheet.swift */,
+				0177752BDA3C974DA055A9E8 /* PodcastFolders.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -158,6 +216,8 @@
 			children = (
 				00741367B27E4987E41F2407 /* AudioPlayerManager.swift */,
 				FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */,
+				4437B68B633E5F2D1FE81C35 /* NotificationManager.swift */,
+				94CA13D09A655493E5D20D30 /* PlaybackHistoryManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,7 +240,7 @@
 			packageProductDependencies = (
 			);
 			productName = ChurchApp;
-			productReference = 62DCFED2096097DA7DB63FB1 /* ChurchApp.app */;
+			productReference = 62DCFED2096097DA7DB63FB1 /* SJCA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -190,8 +250,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					5EE182A8D2960ADCF1D0DDFA = {
+						DevelopmentTeam = MS583APS4H;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 22207CFF7B0787493A2EF735 /* Build configuration list for PBXProject "ChurchApp" */;
@@ -232,18 +296,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B8333AD0231E45AD15B8AF /* AppDelegate.swift in Sources */,
+				0EA85EDDC1260A8B7153C29A /* AppLanguage.swift in Sources */,
 				47E24F373A4E414AB847D2EC /* AudioPlayerManager.swift in Sources */,
 				A34C3957429CF6DA48A2C6B2 /* ChurchAppApp.swift in Sources */,
 				C9FF7FC51C8EEC0C4918C88D /* ContentRepository.swift in Sources */,
 				A0C8D3D15CDA1ED71E3CBF8E /* DownloadManager.swift in Sources */,
 				7937F39F673EB613B71565F8 /* DownloadsView.swift in Sources */,
+				6C9EE19309523D207CA453FC /* FeaturedCardView.swift in Sources */,
+				08598E390A3F40D8B547487A /* HistoryView.swift in Sources */,
 				6B278F7BDF2AFF7AE7DA29CB /* HomeView.swift in Sources */,
 				EAD17C653E3E24772A3EF6FF /* MediaItem.swift in Sources */,
 				51BADEAC91ECF36462CE968C /* MediaRowView.swift in Sources */,
 				CF70D749ED5F69C9615FAA47 /* MiniPlayerBar.swift in Sources */,
+				0164602367841CCBDB6AFC8C /* NotificationManager.swift in Sources */,
+				840D7E0FD8DDBCB63CADF4E8 /* NotificationSettingsSheet.swift in Sources */,
+				39ED871C1AC78B427EFC5583 /* PlaybackHistoryManager.swift in Sources */,
 				998FC93C5C1F38FCCF3F5BEA /* PlayerView.swift in Sources */,
+				871A0328E3E19C817DB5AFFE /* PodcastFolders.swift in Sources */,
+				6D68E816DF5C48C9A1450D37 /* RemoteImage.swift in Sources */,
 				BC85D5F7B152E22F1A2E2768 /* RootView.swift in Sources */,
 				FF132A8B98CA35AE41505BF6 /* SettingsView.swift in Sources */,
+				19E59D1550237E97A77BD0E7 /* Theme.swift in Sources */,
+				6AFB381F149F2B68901DD9E2 /* VideoPlayerView.swift in Sources */,
+				4F73A4A7DB4B4816C8283D20 /* View+OnChangeCompat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,17 +331,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Generated/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourchurch.churchapp;
-				PRODUCT_NAME = "Church App";
-				SDKROOT = iphoneos;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sjca.app;
+				PRODUCT_NAME = SJCA;
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -276,17 +349,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Generated/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourchurch.churchapp;
-				PRODUCT_NAME = "Church App";
-				SDKROOT = iphoneos;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sjca.app;
+				PRODUCT_NAME = SJCA;
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -295,21 +365,13 @@
 		92B63F26C44533C41A4A9DBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -317,34 +379,27 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				DEVELOPMENT_TEAM = MS583APS4H;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -352,21 +407,13 @@
 		BB495CC2DAB56893747FAF97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -374,41 +421,28 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MS583APS4H;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"DEBUG=1",
-				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;

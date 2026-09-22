@@ -5,18 +5,12 @@ struct MediaRowView: View {
     @EnvironmentObject private var downloads: DownloadManager
 
     var body: some View {
-        HStack(spacing: 12) {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(item.type == .sermon ? Color.orange.opacity(0.25) : Color.green.opacity(0.25))
-                .frame(width: 52, height: 52)
-                .overlay(
-                    Image(systemName: item.type == .sermon ? "book.fill" : "music.note")
-                        .foregroundStyle(item.type == .sermon ? .orange : .green)
-                )
+        HStack(spacing: 14) {
+            thumbnail
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(item.title)
-                    .font(.body)
+                    .font(.themeHeading(15.5))
                     .lineLimit(2)
                 HStack(spacing: 6) {
                     if let speaker = item.speaker {
@@ -35,7 +29,35 @@ struct MediaRowView: View {
 
             downloadIndicator
         }
-        .padding(.vertical, 6)
+        .padding(12)
+        .background(Theme.cardBackground, in: RoundedRectangle(cornerRadius: Theme.cardRadius))
+        .themeCardShadow()
+    }
+
+    @ViewBuilder
+    private var thumbnail: some View {
+        Group {
+            if let imageURL = item.imageURL, let url = URL(string: imageURL) {
+                RemoteImage(url: url) { image in
+                    image.resizable().scaledToFill()
+                } placeholder: {
+                    thumbnailPlaceholder
+                }
+            } else {
+                thumbnailPlaceholder
+            }
+        }
+        .frame(width: 54, height: 54)
+        .clipShape(Circle())
+    }
+
+    private var thumbnailPlaceholder: some View {
+        item.type.gradient
+        .overlay(
+            Image(systemName: item.type.iconName)
+                .foregroundStyle(.white)
+                .font(.system(size: 20, weight: .semibold))
+        )
     }
 
     @ViewBuilder
