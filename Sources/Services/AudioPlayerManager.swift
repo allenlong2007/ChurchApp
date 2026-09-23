@@ -2,6 +2,7 @@ import Foundation
 import AVFoundation
 import Combine
 import UIKit
+import MediaPlayer
 
 @MainActor
 final class AudioPlayerManager: ObservableObject {
@@ -19,23 +20,10 @@ final class AudioPlayerManager: ObservableObject {
     private var lastManualSeekAt: Date?
 
     private var audioSessionActivated = false
+    private var remoteCommandsConfigured = false
+    private var nowPlayingArtworkTask: Task<Void, Never>?
 
-    private init() {
-        // Backgrounding the app (home button / app switcher) pauses
-        // playback the same way navigating back to a menu inside the app
-        // already does (see `PlayerView.onDisappear`) -- this is the one
-        // spot that isn't already covered by a SwiftUI `onDisappear`, since
-        // the player keeps running in the mini-player across in-app screens.
-        NotificationCenter.default.addObserver(
-            forName: UIApplication.didEnterBackgroundNotification,
-            object: nil,
-            queue: .main
-        ) { [weak self] _ in
-            Task { @MainActor in
-                self?.pause()
-            }
-        }
-    }
+    private init() {}
 
     /// `setActive(true)` negotiates the real audio route (Bluetooth/AirPlay/
     /// etc.) and can block the calling thread for a noticeable moment --
@@ -55,6 +43,101 @@ final class AudioPlayerManager: ObservableObject {
         audioSessionActivated = true
         try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
         try? AVAudioSession.sharedInstance().setActive(true)
+        configureRemoteCommandsIfNeeded()
+    }
+
+    /// Wires the Lock Screen / Control Center transport controls to this
+    /// player. Required for background audio to be usable at all -- without
+    /// this, a user who backgrounds the app has no way to pause or skip
+    /// what's playing. Configured once, the handlers stay valid for the
+    /// life of the app since they always act on whatever `player` currently
+    /// holds rather than capturing a specific item.
+    private func configureRemoteCommandsIfNeeded() {
+        guard !remoteCommandsConfigured else { return }
+        remoteCommandsConfigured = true
+
+        let center = MPRemoteCommandCenter.shared()
+
+        center.playCommand.addTarget { [weak self] _ in
+            guard let self, let player = self.player, !self.isPlaying else { return .commandFailed }
+            player.rate = self.rate
+            player.play()
+            self.isPlaying = true
+            self.updateNowPlayingInfo()
+            return .success
+        }
+
+        center.pauseCommand.addTarget { [weak self] _ in
+            guard let self, self.isPlaying else { return .commandFailed }
+            self.pause()
+            return .success
+        }
+
+        center.togglePlayPauseCommand.addTarget { [weak self] _ in
+            guard let self, self.player != nil else { return .commandFailed }
+            self.togglePlayPause()
+            return .success
+        }
+
+        center.skipForwardCommand.preferredIntervals = [15]
+        center.skipForwardCommand.addTarget { [weak self] _ in
+            guard let self else { return .commandFailed }
+            self.skip(15)
+            return .success
+        }
+
+        center.skipBackwardCommand.preferredIntervals = [15]
+        center.skipBackwardCommand.addTarget { [weak self] _ in
+            guard let self else { return .commandFailed }
+            self.skip(-15)
+            return .success
+        }
+
+        center.changePlaybackPositionCommand.addTarget { [weak self] event in
+            guard let self, let event = event as? MPChangePlaybackPositionCommandEvent else { return .commandFailed }
+            self.seek(to: event.positionTime)
+            return .success
+        }
+    }
+
+    /// Publishes what's currently playing to the Lock Screen / Control
+    /// Center. Called on every state change that those surfaces show
+    /// (play/pause/seek/track change) rather than on a timer -- iOS
+    /// interpolates the elapsed-time display on its own between updates
+    /// using `playbackRate`, so this doesn't need to run continuously.
+    private func updateNowPlayingInfo() {
+        guard let currentItem else {
+            MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+            return
+        }
+        var info: [String: Any] = [
+            MPMediaItemPropertyTitle: currentItem.title,
+            MPMediaItemPropertyArtist: currentItem.speaker ?? currentItem.series ?? "",
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: currentTime,
+            MPNowPlayingInfoPropertyPlaybackRate: isPlaying ? Double(rate) : 0,
+            MPMediaItemPropertyPlaybackDuration: duration
+        ]
+        if let existingArtwork = MPNowPlayingInfoCenter.default().nowPlayingInfo?[MPMediaItemPropertyArtwork] {
+            info[MPMediaItemPropertyArtwork] = existingArtwork
+        }
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = info
+        loadNowPlayingArtworkIfNeeded(for: currentItem)
+    }
+
+    private func loadNowPlayingArtworkIfNeeded(for item: MediaItem) {
+        guard let imageURLString = item.imageURL, let imageURL = URL(string: imageURLString) else { return }
+        nowPlayingArtworkTask?.cancel()
+        nowPlayingArtworkTask = Task { [weak self] in
+            guard let (data, _) = try? await URLSession.shared.data(from: imageURL),
+                  let image = UIImage(data: data), !Task.isCancelled else { return }
+            let artwork = MPMediaItemArtwork(boundsSize: image.size) { _ in image }
+            await MainActor.run {
+                guard let self, self.currentItem?.id == item.id else { return }
+                var info = MPNowPlayingInfoCenter.default().nowPlayingInfo ?? [:]
+                info[MPMediaItemPropertyArtwork] = artwork
+                MPNowPlayingInfoCenter.default().nowPlayingInfo = info
+            }
+        }
     }
 
     /// Starts the given item fresh from 0:00 (or from `startAt`, used when
@@ -83,6 +166,7 @@ final class AudioPlayerManager: ObservableObject {
             Task { @MainActor [weak self] in
                 self?.isPlaying = false
                 self?.recordHistory()
+                self?.updateNowPlayingInfo()
             }
         }
 
@@ -93,6 +177,7 @@ final class AudioPlayerManager: ObservableObject {
         player?.rate = rate
         player?.play()
         isPlaying = true
+        updateNowPlayingInfo()
     }
 
     func togglePlayPause() {
@@ -105,6 +190,7 @@ final class AudioPlayerManager: ObservableObject {
             player.play()
         }
         isPlaying.toggle()
+        updateNowPlayingInfo()
     }
 
     /// Pauses without clearing `currentItem` -- the mini-player keeps
@@ -115,6 +201,7 @@ final class AudioPlayerManager: ObservableObject {
         player?.pause()
         isPlaying = false
         recordHistory()
+        updateNowPlayingInfo()
     }
 
     private func recordHistory() {
@@ -149,6 +236,7 @@ final class AudioPlayerManager: ObservableObject {
         lastManualSeekAt = Date()
         let tolerance = CMTime(seconds: 0.5, preferredTimescale: 600)
         player?.seek(to: CMTime(seconds: clamped, preferredTimescale: 600), toleranceBefore: tolerance, toleranceAfter: tolerance)
+        updateNowPlayingInfo()
     }
 
     func skip(_ seconds: Double) {
@@ -172,6 +260,7 @@ final class AudioPlayerManager: ObservableObject {
                   loaded.isValid, loaded.seconds.isFinite else { return }
             guard self?.player?.currentItem === playerItem else { return }
             self?.duration = loaded.seconds
+            self?.updateNowPlayingInfo()
         }
     }
 
