@@ -1,6 +1,6 @@
-# 拾穗 SJCA — Church App
+# 拾穗 SJCA: Church App
 
-An iPhone app for my church, San Jose Christian Assembly, to share sermons, hymns, and videos with the congregation in English and Chinese. I built it myself, start to finish, and submitted it to the App Store.
+An iPhone app for my church, San Jose Christian Assembly. People use it to listen to sermons and hymns, and watch videos, in English or Chinese. I built it myself and submitted it to the App Store.
 
 <p align="center">
   <img src="docs/screenshots/01_home.png" width="230" alt="Home screen with content categories" />
@@ -10,26 +10,21 @@ An iPhone app for my church, San Jose Christian Assembly, to share sermons, hymn
 
 ## Why I made it
 
-The church wanted a simple way to get sermons and music out to everyone without paying for some third-party podcast app, and a lot of the congregation reads Chinese more comfortably than English. So the app does both languages, and you can flip between them whenever you want.
+The church wanted an easy way to get sermons and music in front of the congregation without paying for a third-party podcast app. A lot of the congregation reads Chinese more comfortably than English too. So the app supports both languages, and you can switch between them anytime.
 
 ## What it can do
 
-- Sermons, hymns, and videos, sorted into categories
-- Switch between English and Chinese from inside the app
-- Download stuff to listen to offline
-- Keeps playing audio in the background, even with the screen off
-- Picks up right where you left off
-- New content shows up on its own — I don't have to push an app update every time there's a new sermon
+Sermons, hymns, and videos are sorted into categories you can browse. You can switch the whole app between English and Chinese from inside it. Anything can be downloaded for offline listening. Audio keeps playing in the background, even with the screen off, and it remembers exactly where you left off. New content shows up on its own too, so I don't have to push an app update every time a sermon gets added.
 
 ## Built with
 
-Swift and SwiftUI, AVFoundation for the audio/video player, XcodeGen for the project file, and Firebase for hosting the media.
+Swift and SwiftUI, AVFoundation for the audio and video player, XcodeGen for the project file, and Firebase to host the media.
 
 ## How it works
 
-There's a small bit of content built right into the app, so it works even with zero internet. Past that, it checks a hosted file online every time it opens, and if there's anything new it swaps it in. That's the whole trick behind adding new sermons without ever touching the App Store again.
+A small set of content is built right into the app, so it works even with no internet at all. Every time it opens, it checks a hosted file online for anything new and swaps it in if there is. That's how new sermons get added without ever touching the App Store again.
 
-If you want to see how it's set up in more depth, or turn this into something for your own church, that's in [docs/CUSTOMIZING.md](docs/CUSTOMIZING.md).
+More on how it's set up, or how to turn this into something for another church, is in [docs/CUSTOMIZING.md](docs/CUSTOMIZING.md).
 
 ## Running it
 
