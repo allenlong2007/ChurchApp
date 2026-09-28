@@ -1,6 +1,6 @@
 # 拾穗 SJCA: Church App
 
-An iPhone app for my church, San Jose Christian Assembly. People use it to listen to sermons and hymns, and watch videos, in English or Chinese. I built it myself and submitted it to the App Store.
+An iPhone app for my church, San Jose Christian Assembly. People use it to listen to sermons and hymns, and watch videos, in English or Chinese. I built it myself, start to finish, and it's live on the App Store now.
 
 <p align="center">
   <img src="docs/screenshots/01_home.png" width="230" alt="Home screen with content categories" />
@@ -39,4 +39,4 @@ Needs [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`
 
 ## Status
 
-Sitting in App Store review right now.
+Live on the App Store.
