@@ -117,9 +117,9 @@ struct PodcastSeriesEpisodesView: View {
                             .matchingAppLanguage(appLanguage)
                         NavigationLink(value: PodcastSeriesRoute(name: child.name, mediaType: mediaType)) {
                             PodcastFolderCard(
-                                name: child.name,
+                                name: child.localizedName(for: appLanguage),
                                 imageURL: child.imageURL,
-                                speaker: child.speaker,
+                                speaker: child.localizedSpeaker(for: appLanguage),
                                 episodes: childEpisodes
                             )
                         }
@@ -145,7 +145,7 @@ struct PodcastSeriesEpisodesView: View {
             }
         }
         .background(Theme.pageBackground)
-        .navigationTitle(Text(seriesName))
+        .navigationTitle(Text(repository.seriesInfo(named: seriesName)?.localizedName(for: appLanguage) ?? seriesName))
         .navigationBarTitleDisplayMode(.inline)
     }
 }

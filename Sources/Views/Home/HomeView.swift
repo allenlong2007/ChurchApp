@@ -249,9 +249,9 @@ struct HomeView: View {
                         .matchingAppLanguage(appLanguage)
                     NavigationLink(value: PodcastSeriesRoute(name: series.name, mediaType: mediaType)) {
                         PodcastFolderCard(
-                            name: series.name,
+                            name: series.localizedName(for: appLanguage),
                             imageURL: series.imageURL,
-                            speaker: series.speaker,
+                            speaker: series.localizedSpeaker(for: appLanguage),
                             episodes: episodes,
                             childCount: children.isEmpty ? nil : children.count
                         )

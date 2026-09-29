@@ -45,7 +45,7 @@ final class ContentRepository: ObservableObject {
             return seriesInfo.contains { $0.name == name && $0.parent != nil } ? nil : name
         })
         let extra = found.subtracting(declaredNames).sorted().map {
-            PodcastSeriesInfo(name: $0, parent: nil, imageURL: nil, speaker: nil)
+            PodcastSeriesInfo(name: $0, parent: nil, imageURL: nil, speaker: nil, nameZh: nil, speakerZh: nil)
         }
         return declared + extra
     }
@@ -63,6 +63,12 @@ final class ContentRepository: ObservableObject {
     /// books under "Pre-Study"). Empty for a leaf folder.
     func subSeries(of parentName: String) -> [PodcastSeriesInfo] {
         seriesInfo.filter { $0.parent == parentName }
+    }
+
+    /// Looks up a series' catalog entry by its (language-independent) name,
+    /// e.g. to get its localized display name/speaker for a nav title.
+    func seriesInfo(named name: String) -> PodcastSeriesInfo? {
+        seriesInfo.first { $0.name == name }
     }
 
     private let cacheURL: URL = {

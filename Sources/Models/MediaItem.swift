@@ -54,8 +54,26 @@ struct PodcastSeriesInfo: Codable, Identifiable, Hashable {
     let parent: String?
     let imageURL: String?
     let speaker: String?
+    /// Optional Chinese display text for `name`/`speaker`. `name` itself
+    /// stays the grouping/matching key regardless of UI language (it's
+    /// compared against `MediaItem.series`, which is shared by that
+    /// series' English- and Chinese-language episodes alike) -- these are
+    /// display-only overrides, used in place of `name`/`speaker` when the
+    /// app's language is Chinese.
+    let nameZh: String?
+    let speakerZh: String?
 
     var id: String { parent.map { "\($0)/\(name)" } ?? name }
+
+    func localizedName(for appLanguage: String) -> String {
+        if appLanguage.hasPrefix("zh"), let nameZh, !nameZh.isEmpty { return nameZh }
+        return name
+    }
+
+    func localizedSpeaker(for appLanguage: String) -> String? {
+        if appLanguage.hasPrefix("zh"), let speakerZh, !speakerZh.isEmpty { return speakerZh }
+        return speaker
+    }
 }
 
 struct ContentManifest: Codable {
