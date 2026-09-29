@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T22:16:17Z",
+  "updatedAt": "2026-09-29T22:37:19Z",
   "series": [
     {
       "name": "Abide in Christ",
@@ -13,7 +13,9 @@
       "name": "The Octave of Redemption",
       "parent": null,
       "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fthe-octave-of-redemption-author.png?alt=media",
-      "speaker": "T. Austin-Sparks"
+      "speaker": "T. Austin-Sparks",
+      "nameZh": "救赎的八段",
+      "speakerZh": "史百克"
     },
     {
       "name": "What is Man",
@@ -975,6 +977,76 @@
       "dateAdded": "2026-09-29T22:16:17Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp060-10-As-Your-Redemption.mp3?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "p061",
+      "type": "podcast",
+      "title": "Chapter 2 The Earthly Life of the Lord Jesus",
+      "speaker": null,
+      "series": "The Octave of Redemption",
+      "category": null,
+      "dateAdded": "2026-09-29T22:30:04Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp061-Chapter-2-The-Earthly-Life-of-the-Lord-Jesus.mp3?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "p062",
+      "type": "podcast",
+      "title": "Chapter 3 The Cross",
+      "speaker": null,
+      "series": "The Octave of Redemption",
+      "category": null,
+      "dateAdded": "2026-09-29T22:30:09Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp062-Chapter-3-The-Cross.mp3?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "p063",
+      "type": "podcast",
+      "title": "Chapter 4 The Forty Days",
+      "speaker": null,
+      "series": "The Octave of Redemption",
+      "category": null,
+      "dateAdded": "2026-09-29T22:30:15Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp063-Chapter-4-The-Forty-Days.mp3?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "p064",
+      "type": "podcast",
+      "title": "Chapter 5 Ascension And Glorifying Of The Lord Jesus",
+      "speaker": null,
+      "series": "The Octave of Redemption",
+      "category": null,
+      "dateAdded": "2026-09-29T22:30:18Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp064-Chapter-5-Ascension-And-Glorifying-Of-The-Lord-Jesus.mp3?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "p065",
+      "type": "podcast",
+      "title": "Chapter 6 The Advent Of The Holy Spirit",
+      "speaker": null,
+      "series": "The Octave of Redemption",
+      "category": null,
+      "dateAdded": "2026-09-29T22:30:23Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp065-Chapter-6-The-Advent-Of-The-Holy-Spirit.mp3?alt=media",
       "imageURL": null,
       "language": "en",
       "order": null
