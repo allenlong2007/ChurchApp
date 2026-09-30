@@ -21,6 +21,20 @@
                ReferencedContainer = "container:ChurchApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6F8FDB1CD700B5E52C23457F"
+               BuildableName = "ChurchAppTests.xctest"
+               BlueprintName = "ChurchAppTests"
+               ReferencedContainer = "container:ChurchApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -39,7 +53,20 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6F8FDB1CD700B5E52C23457F"
+               BuildableName = "ChurchAppTests.xctest"
+               BlueprintName = "ChurchAppTests"
+               ReferencedContainer = "container:ChurchApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

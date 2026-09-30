@@ -9,6 +9,10 @@ settings:
   base:
     SWIFT_VERSION: "5.0"
     ENABLE_PREVIEWS: "YES"
+  configs:
+    Debug:
+      ENABLE_TESTABILITY: YES
+      ONLY_ACTIVE_ARCH: YES
 targets:
   ChurchApp:
     type: application
@@ -43,12 +47,32 @@ targets:
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: MS583APS4H
     schemes: {}
+  ChurchAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_NAME: ChurchAppTests
+        PRODUCT_BUNDLE_IDENTIFIER: org.sjca.app.tests
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/SJCA.app/SJCA"
+        DEVELOPMENT_TEAM: MS583APS4H
+    dependencies:
+      - target: ChurchApp
 schemes:
   ChurchApp:
     build:
       targets:
         ChurchApp: all
+        ChurchAppTests: [test]
     run:
       config: Debug
+    test:
+      config: Debug
+      targets:
+        - ChurchAppTests
     archive:
       config: Release
