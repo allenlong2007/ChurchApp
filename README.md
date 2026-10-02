@@ -1,5 +1,7 @@
 # 拾穗 SJCA: Church App
 
+[![Tests](https://github.com/allenlong2007/ChurchApp/actions/workflows/tests.yml/badge.svg)](https://github.com/allenlong2007/ChurchApp/actions/workflows/tests.yml)
+
 An iPhone app for my church, San Jose Christian Assembly. People use it to listen to sermons and hymns, and watch videos, in English or Chinese. I built it myself, start to finish, and it's [live on the App Store](https://apps.apple.com/us/app/%E6%8B%BE%E7%A9%97-sjca/id6814304145) now.
 
 <p align="center">
