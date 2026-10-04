@@ -84,6 +84,12 @@ final class ContentRepository: ObservableObject {
     private let knownIDsKey = "contentRepository.knownItemIDs"
     private let hasSeededKnownIDsKey = "contentRepository.hasSeededKnownItemIDs"
 
+    /// How often content refreshes on its own -- so new podcasts/hymns
+    /// uploaded through the content-uploader reach people who already have
+    /// the app open without them force-quitting it or hitting Refresh.
+    private static let autoRefreshInterval: TimeInterval = 3600
+    private var autoRefreshTimer: Timer?
+
     private init() {
         apply(Self.loadBundled())
         if let cached = loadCache() {
@@ -93,6 +99,28 @@ final class ContentRepository: ObservableObject {
             UserDefaults.standard.set(items.map(\.id), forKey: knownIDsKey)
             UserDefaults.standard.set(true, forKey: hasSeededKnownIDsKey)
         }
+        startAutoRefreshTimer()
+    }
+
+    private func startAutoRefreshTimer() {
+        let timer = Timer(timeInterval: Self.autoRefreshInterval, repeats: true) { [weak self] _ in
+            Task { await self?.refresh() }
+        }
+        // `.common` keeps this firing while the user is actively scrolling,
+        // not just when the run loop is otherwise idle.
+        RunLoop.main.add(timer, forMode: .common)
+        autoRefreshTimer = timer
+    }
+
+    /// Call when the app returns to the foreground -- catches up on content
+    /// that arrived while backgrounded (when the timer above wasn't
+    /// running), but only if it's actually been a while, so quickly
+    /// switching back and forth doesn't trigger a fetch every time.
+    func refreshIfStale() async {
+        if let lastUpdated, Date().timeIntervalSince(lastUpdated) < Self.autoRefreshInterval {
+            return
+        }
+        await refresh()
     }
 
     private func apply(_ manifest: ContentManifest) {

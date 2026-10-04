@@ -12,6 +12,7 @@
 		0EA85EDDC1260A8B7153C29A /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175984DB975CEBCA93F4005 /* AppLanguage.swift */; };
 		11B8333AD0231E45AD15B8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58160962CC21E97AADFD6FB9 /* AppDelegate.swift */; };
 		19E59D1550237E97A77BD0E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9948786D34FBD7CE52D105 /* Theme.swift */; };
+		3060A04710D5EC406F699319 /* AppUpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B80904C6BD66606737E7F6 /* AppUpdateChecker.swift */; };
 		39ED871C1AC78B427EFC5583 /* PlaybackHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA13D09A655493E5D20D30 /* PlaybackHistoryManager.swift */; };
 		3FF35B1B8FEF49D5C534A3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C70CC588E653C54B605FF41 /* Assets.xcassets */; };
 		47E24F373A4E414AB847D2EC /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00741367B27E4987E41F2407 /* AudioPlayerManager.swift */; };
@@ -31,6 +32,7 @@
 		A0C8D3D15CDA1ED71E3CBF8E /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */; };
 		A34C3957429CF6DA48A2C6B2 /* ChurchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B3E520C7B1C848014D5830 /* ChurchAppApp.swift */; };
 		BC85D5F7B152E22F1A2E2768 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFAE3F663E24EF8666398D5 /* RootView.swift */; };
+		C25D5B3032F843687E46D6E6 /* UpdateRequiredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC428731A3519162E6A6A9A /* UpdateRequiredView.swift */; };
 		C9FF7FC51C8EEC0C4918C88D /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECE7097C28D9A4B8AA04CFB /* ContentRepository.swift */; };
 		CF70D749ED5F69C9615FAA47 /* MiniPlayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4274955BC6DBC82A8176D6 /* MiniPlayerBar.swift */; };
 		EAD17C653E3E24772A3EF6FF /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0576F7E72BD9593E868224 /* MediaItem.swift */; };
@@ -58,6 +60,8 @@
 		35909C2CE5162395A01FBF9C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3EF72C843F039FBAB3FABF26 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		4437B68B633E5F2D1FE81C35 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		4FC428731A3519162E6A6A9A /* UpdateRequiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRequiredView.swift; sourceTree = "<group>"; };
+		55B80904C6BD66606737E7F6 /* AppUpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateChecker.swift; sourceTree = "<group>"; };
 		58160962CC21E97AADFD6FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62DCFED2096097DA7DB63FB1 /* ChurchApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ChurchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6FEAF29EC945EB3DFAC008 /* FeaturedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCardView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF72C843F039FBAB3FABF26 /* RemoteImage.swift */,
+				4FC428731A3519162E6A6A9A /* UpdateRequiredView.swift */,
 				D3869853665B758D8C9CC81D /* View+OnChangeCompat.swift */,
 			);
 			path = Shared;
@@ -237,6 +242,7 @@
 		E326DF9459305060D340429E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				55B80904C6BD66606737E7F6 /* AppUpdateChecker.swift */,
 				00741367B27E4987E41F2407 /* AudioPlayerManager.swift */,
 				FA5A7A901E0E404EA70EB5DC /* DownloadManager.swift */,
 				4437B68B633E5F2D1FE81C35 /* NotificationManager.swift */,
@@ -343,6 +349,7 @@
 			files = (
 				11B8333AD0231E45AD15B8AF /* AppDelegate.swift in Sources */,
 				0EA85EDDC1260A8B7153C29A /* AppLanguage.swift in Sources */,
+				3060A04710D5EC406F699319 /* AppUpdateChecker.swift in Sources */,
 				47E24F373A4E414AB847D2EC /* AudioPlayerManager.swift in Sources */,
 				A34C3957429CF6DA48A2C6B2 /* ChurchAppApp.swift in Sources */,
 				C9FF7FC51C8EEC0C4918C88D /* ContentRepository.swift in Sources */,
@@ -363,6 +370,7 @@
 				BC85D5F7B152E22F1A2E2768 /* RootView.swift in Sources */,
 				FF132A8B98CA35AE41505BF6 /* SettingsView.swift in Sources */,
 				19E59D1550237E97A77BD0E7 /* Theme.swift in Sources */,
+				C25D5B3032F843687E46D6E6 /* UpdateRequiredView.swift in Sources */,
 				6AFB381F149F2B68901DD9E2 /* VideoPlayerView.swift in Sources */,
 				4F73A4A7DB4B4816C8283D20 /* View+OnChangeCompat.swift in Sources */,
 			);
@@ -405,10 +413,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = MS583APS4H;
 				INFOPLIST_FILE = Generated/Info.plist;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sjca.app;
 				PRODUCT_NAME = SJCA;
 				SUPPORTS_MACCATALYST = NO;
@@ -422,10 +430,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = MS583APS4H;
 				INFOPLIST_FILE = Generated/Info.plist;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sjca.app;
 				PRODUCT_NAME = SJCA;
 				SUPPORTS_MACCATALYST = NO;

@@ -23,7 +23,7 @@ targets:
     info:
       path: Generated/Info.plist
       properties:
-        CFBundleDisplayName: "拾穗"
+        CFBundleDisplayName: "拾穗 | Gleaning"
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         UILaunchScreen: {}
@@ -38,8 +38,8 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: org.sjca.app
         PRODUCT_NAME: "SJCA"
-        MARKETING_VERSION: "1.2"
-        CURRENT_PROJECT_VERSION: "5"
+        MARKETING_VERSION: "1.3"
+        CURRENT_PROJECT_VERSION: "6"
         TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor

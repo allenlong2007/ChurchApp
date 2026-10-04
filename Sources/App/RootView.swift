@@ -7,6 +7,8 @@ struct RootView: View {
     @StateObject private var downloads = DownloadManager.shared
     @StateObject private var notifications = NotificationManager.shared
     @StateObject private var history = PlaybackHistoryManager.shared
+    @StateObject private var updateChecker = AppUpdateChecker.shared
+    @Environment(\.scenePhase) private var scenePhase
     @State private var showDisplayZoomAlert = false
 
     var body: some View {
@@ -65,12 +67,27 @@ struct RootView: View {
         .task {
             downloads.reconcileStaleDownloads(currentItems: repository.items)
             await repository.refresh()
+            await updateChecker.check()
         }
         .onChangeCompat(of: repository.items) { newItems in
             downloads.reconcileStaleDownloads(currentItems: newItems)
         }
+        .onChangeCompat(of: scenePhase) { newPhase in
+            guard newPhase == .active else { return }
+            Task {
+                await repository.refreshIfStale()
+                await updateChecker.checkIfStale()
+            }
+        }
         .onAppear {
             showDisplayZoomAlert = Self.isDisplayZoomOn
+        }
+        // No dismiss gesture and no cancel action by design -- this is a
+        // hard gate, not a dismissible suggestion, so the bound `isPresented`
+        // ignores any attempt to set it back to false from outside.
+        .fullScreenCover(isPresented: Binding(get: { updateChecker.updateIsRequired }, set: { _ in })) {
+            UpdateRequiredView(appStoreURL: updateChecker.appStoreURL)
+                .interactiveDismissDisabled(true)
         }
         .alert("Display Zoom Is On", isPresented: $showDisplayZoomAlert) {
             Button("OK") {}
