@@ -15,6 +15,10 @@ struct RemoteImage<Content: View, Placeholder: View>: View {
     let placeholder: () -> Placeholder
 
     @State private var uiImage: UIImage?
+    // The URL `uiImage` was loaded from. SwiftUI reuses this view (and its @State) when a
+    // card is re-pointed at a different episode, e.g. when the app language switches, so
+    // the picture must be matched to the URL or the previous episode's cover sticks.
+    @State private var shownURL: URL?
     @State private var attempt = 0
 
     private let maxAttempts = 3
@@ -31,11 +35,12 @@ struct RemoteImage<Content: View, Placeholder: View>: View {
         self.placeholder = placeholder
         let cached = url.flatMap { ImageMemoryCache.shared.image(for: $0) }
         _uiImage = State(initialValue: cached)
+        _shownURL = State(initialValue: cached == nil ? nil : url)
     }
 
     var body: some View {
         Group {
-            if let uiImage {
+            if let uiImage, shownURL == url {
                 content(Image(uiImage: uiImage))
             } else {
                 placeholder()
@@ -52,13 +57,16 @@ struct RemoteImage<Content: View, Placeholder: View>: View {
     }
 
     private func load() async {
-        guard let url, uiImage == nil else { return }
+        guard let url else { return }
+        if shownURL == url, uiImage != nil { return }
         if let cached = ImageMemoryCache.shared.image(for: url) {
             uiImage = cached
+            shownURL = url
             return
         }
         if let image = await fetch(url: url, cachePolicy: .useProtocolCachePolicy) {
             uiImage = image
+            shownURL = url
             ImageMemoryCache.shared.store(image, for: url)
             return
         }
@@ -68,6 +76,7 @@ struct RemoteImage<Content: View, Placeholder: View>: View {
         // showing while offline instead of falling back to the placeholder.
         if let image = await fetch(url: url, cachePolicy: .returnCacheDataDontLoad) {
             uiImage = image
+            shownURL = url
             ImageMemoryCache.shared.store(image, for: url)
             return
         }

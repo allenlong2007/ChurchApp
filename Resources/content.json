@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T05:31:52Z",
+  "updatedAt": "2026-10-06T07:02:48Z",
   "series": [
     {
       "name": "Abide in Christ",
@@ -22,7 +22,8 @@
       "parent": null,
       "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fwhat-is-man-author.png?alt=media",
       "speaker": "T. Austin-Sparks",
-      "speakerZh": "史百克"
+      "speakerZh": "史百克",
+      "nameZh": "人算什么"
     },
     {
       "name": "Morning Watch Guide",
@@ -306,7 +307,7 @@
       "id": "p016",
       "type": "podcast",
       "title": "01 人崇高的展望及命运（上）",
-      "speaker": "T. Austin-Sparks",
+      "speaker": "史百克",
       "series": "What is Man",
       "category": null,
       "dateAdded": "2026-08-25T22:09:58Z",
@@ -1698,7 +1699,7 @@
       "dateAdded": "2026-10-04T05:20:04Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp031-1.-Inside-the-Wall.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1712,7 +1713,7 @@
       "dateAdded": "2026-10-04T05:20:05Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp046-2.-The-Telephone-System.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1726,7 +1727,7 @@
       "dateAdded": "2026-10-04T05:20:06Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp116-3.-The-Furnace.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1740,7 +1741,7 @@
       "dateAdded": "2026-10-04T05:20:07Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp117-4.-White-Elephants.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1754,7 +1755,7 @@
       "dateAdded": "2026-10-04T05:20:08Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp118-5.-Climbing-Everest.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1768,7 +1769,7 @@
       "dateAdded": "2026-10-04T05:20:09Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp119-6.-Stamp-Collecting.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1782,7 +1783,7 @@
       "dateAdded": "2026-10-04T05:20:11Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp120-7.-Opening-Iron-Gates.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1796,7 +1797,7 @@
       "dateAdded": "2026-10-04T05:20:13Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp121-8.-Name-or-Nature.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1810,7 +1811,7 @@
       "dateAdded": "2026-10-04T05:20:14Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp122-9.-Free-From-the-Law.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1824,7 +1825,7 @@
       "dateAdded": "2026-10-04T05:20:15Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp123-10.-Sailing-Against-the-Wind.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1838,7 +1839,7 @@
       "dateAdded": "2026-10-04T05:20:16Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp124-11.-Cooling-Off.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1852,7 +1853,7 @@
       "dateAdded": "2026-10-04T05:20:17Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp125-12.-Lost-In-the-Darkness.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1866,7 +1867,7 @@
       "dateAdded": "2026-10-04T05:20:19Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp126-13.-The-New-Song.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1880,7 +1881,7 @@
       "dateAdded": "2026-10-04T05:20:20Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp127-14.-The-Stranger-in-the-Nest.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1894,7 +1895,7 @@
       "dateAdded": "2026-10-04T05:20:21Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp128-15.-Finding-the-Wings.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1908,7 +1909,7 @@
       "dateAdded": "2026-10-04T05:20:23Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp129-16.-The-Man-With-Bad-Conscience.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1922,7 +1923,7 @@
       "dateAdded": "2026-10-04T05:20:24Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp130-17.-On-Eagle%27s-Wings.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1936,7 +1937,7 @@
       "dateAdded": "2026-10-04T05:20:26Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp131-18.-A-Lesson-In-Love.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1950,7 +1951,7 @@
       "dateAdded": "2026-10-04T05:20:27Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp132-19.-Out-Of-Her-Element.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1964,7 +1965,7 @@
       "dateAdded": "2026-10-04T05:20:28Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp133-20.-Palm-Sunday.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1978,7 +1979,7 @@
       "dateAdded": "2026-10-04T05:20:30Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp134-21.-A-Warm-Welcom.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -1992,7 +1993,7 @@
       "dateAdded": "2026-10-04T05:20:32Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp135-22.-Shining-In-The-Dark.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -2006,7 +2007,7 @@
       "dateAdded": "2026-10-04T05:20:33Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp136-23.-Taste-and-See.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -2020,7 +2021,7 @@
       "dateAdded": "2026-10-04T05:20:35Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp137-24.-The-Voice-of-the-Master.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -2036,6 +2037,48 @@
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp138-25.-Sweet-and-White.mp3?alt=media",
       "imageURL": null,
       "language": "en",
+      "order": null
+    },
+    {
+      "id": "p035",
+      "type": "podcast",
+      "title": "02 人崇高的展望及命运（下）",
+      "speaker": "史百克",
+      "series": "What is Man",
+      "category": null,
+      "dateAdded": "2026-10-06T06:49:07Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp035-02-%E4%BA%BA%E5%B4%87%E9%AB%98%E7%9A%84%E5%B1%95%E6%9C%9B%E5%8F%8A%E5%91%BD%E8%BF%90-%EF%BC%88%E4%B8%8B%EF%BC%89.mp3?alt=media",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fwhat-is-man--zh.jpg?alt=media",
+      "language": "zh",
+      "order": null
+    },
+    {
+      "id": "p036",
+      "type": "podcast",
+      "title": "03 人成为一个与原初神所创造不同的族类（上）",
+      "speaker": "史百克",
+      "series": "What is Man",
+      "category": null,
+      "dateAdded": "2026-10-06T06:49:18Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp036-03-%E4%BA%BA%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%B8%8E%E5%8E%9F%E5%88%9D%E7%A5%9E%E6%89%80%E5%88%9B%E9%80%A0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%97%8F%E7%B1%BB-%EF%BC%88%E4%B8%8A%EF%BC%89.mp3?alt=media",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fwhat-is-man--zh.jpg?alt=media",
+      "language": "zh",
+      "order": null
+    },
+    {
+      "id": "p041",
+      "type": "podcast",
+      "title": "04 人成为一个与原初神所创造不同的族类（中）",
+      "speaker": "史百克",
+      "series": "What is Man",
+      "category": null,
+      "dateAdded": "2026-10-06T06:49:27Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp041-04-%E4%BA%BA%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%B8%8E%E5%8E%9F%E5%88%9D%E7%A5%9E%E6%89%80%E5%88%9B%E9%80%A0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%97%8F%E7%B1%BB-%EF%BC%88%E4%B8%AD%EF%BC%89.mp3?alt=media",
+      "imageURL": null,
+      "language": "zh",
       "order": null
     }
   ]

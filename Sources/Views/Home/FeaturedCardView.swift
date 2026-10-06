@@ -8,8 +8,13 @@ struct FeaturedHeroCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            artwork
+            // The square cover is scaled to fill a wide, short window, so it
+            // overflows above and below. Hit testing doesn't respect that clip,
+            // and the overflow would swallow taps meant for the section buttons
+            // above the card -- the image is purely decorative, so it opts out.
+            Color.clear
                 .frame(height: 170)
+                .overlay { artwork.allowsHitTesting(false) }
                 .clipShape(RoundedRectangle(cornerRadius: Theme.heroRadius))
                 .overlay(alignment: .topLeading) {
                     Text("Latest")
@@ -35,6 +40,7 @@ struct FeaturedHeroCard: View {
             .padding(16)
         }
         .background(Theme.cardBackground, in: RoundedRectangle(cornerRadius: Theme.heroRadius))
+        .contentShape(RoundedRectangle(cornerRadius: Theme.heroRadius))
         .overlay(
             RoundedRectangle(cornerRadius: Theme.heroRadius)
                 .strokeBorder(Theme.flareGradient.opacity(0.45), lineWidth: 1.25)
