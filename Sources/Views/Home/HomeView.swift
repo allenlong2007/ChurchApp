@@ -242,8 +242,8 @@ struct HomeView: View {
                 .padding(.horizontal)
 
             LazyVStack(spacing: 10) {
-                ForEach(repository.topLevelSeries(for: mediaType)) { series in
-                    let children = repository.subSeries(of: series.name)
+                ForEach(repository.topLevelSeries(for: mediaType, appLanguage: appLanguage)) { series in
+                    let children = repository.subSeries(of: series.name, type: mediaType, appLanguage: appLanguage)
                     let episodes = repository.items
                         .filter { $0.type == mediaType && $0.series == series.name }
                         .matchingAppLanguage(appLanguage)
@@ -253,7 +253,8 @@ struct HomeView: View {
                             imageURL: series.imageURL,
                             speaker: series.localizedSpeaker(for: appLanguage),
                             episodes: episodes,
-                            childCount: children.isEmpty ? nil : children.count
+                            childCount: children.isEmpty ? nil : children.count,
+                            childrenAreBooks: mediaType == .podcast
                         )
                     }
                     .buttonStyle(.plain)

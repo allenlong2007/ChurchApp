@@ -29,18 +29,24 @@ final class ContentRepository: ObservableObject {
     @Published private(set) var lastError: String?
     @Published private(set) var lastUpdated: Date?
 
-    /// Top-level folders for the given media type (podcasts and hymns can
-    /// each have their own folders): the manifest's declared top-level
-    /// series that actually hold an item of that type -- directly, or (for
-    /// a parent folder like "Pre-Study", which has no items of its own,
-    /// only sub-folders) via a descendant that does -- plus any series
-    /// found on an actual item that isn't declared (so a folder is never
-    /// silently missing just because it wasn't added).
-    func topLevelSeries(for type: MediaType) -> [PodcastSeriesInfo] {
-        let declared = seriesInfo.filter { $0.parent == nil && seriesHasItems(named: $0.name, of: type) }
+    /// Top-level folders for the given media type and app language (podcasts
+    /// and hymns can each have their own folders): the manifest's declared
+    /// top-level series that hold an episode of that type in that language --
+    /// directly, or (for a parent folder like "Pre-Study", which has no items
+    /// of its own, only sub-folders) via a descendant that does -- plus any
+    /// series found on an actual item that isn't declared (so a folder is
+    /// never silently missing just because it wasn't added). A folder with
+    /// nothing in the current language is hidden rather than shown empty.
+    func topLevelSeries(for type: MediaType, appLanguage: String) -> [PodcastSeriesInfo] {
+        let language = contentLanguageCode(forAppLanguage: appLanguage)
+        let declared = seriesInfo.filter {
+            $0.parent == nil && FolderVisibility.hasEpisodes(
+                named: $0.name, type: type, language: language, items: items, seriesInfo: seriesInfo
+            )
+        }
         let declaredNames = Set(declared.map(\.name))
         let found = Set(items.compactMap { item -> String? in
-            guard item.type == type, let name = item.series else { return nil }
+            guard item.type == type, item.language == language, let name = item.series else { return nil }
             // Only surface as top-level if it isn't itself declared as a sub-folder.
             return seriesInfo.contains { $0.name == name && $0.parent != nil } ? nil : name
         })
@@ -50,19 +56,16 @@ final class ContentRepository: ObservableObject {
         return declared + extra
     }
 
-    /// True if the named series has an item of the given type directly, or
-    /// (recursively) any sub-folder that does.
-    private func seriesHasItems(named seriesName: String, of type: MediaType) -> Bool {
-        if items.contains(where: { $0.series == seriesName && $0.type == type }) {
-            return true
+    /// Sub-folders declared under the given parent folder name (e.g. the
+    /// books under "Pre-Study") that have something in the app's current
+    /// language. Empty for a leaf folder.
+    func subSeries(of parentName: String, type: MediaType, appLanguage: String) -> [PodcastSeriesInfo] {
+        let language = contentLanguageCode(forAppLanguage: appLanguage)
+        return seriesInfo.filter {
+            $0.parent == parentName && FolderVisibility.hasEpisodes(
+                named: $0.name, type: type, language: language, items: items, seriesInfo: seriesInfo
+            )
         }
-        return subSeries(of: seriesName).contains { seriesHasItems(named: $0.name, of: type) }
-    }
-
-    /// Sub-folders declared under the given parent folder name (e.g. the 5
-    /// books under "Pre-Study"). Empty for a leaf folder.
-    func subSeries(of parentName: String) -> [PodcastSeriesInfo] {
-        seriesInfo.filter { $0.parent == parentName }
     }
 
     /// Looks up a series' catalog entry by its (language-independent) name,
@@ -193,6 +196,23 @@ final class ContentRepository: ObservableObject {
             }
         } catch {
             lastError = error.localizedDescription
+        }
+    }
+}
+
+/// Whether a folder has anything to show for one media type in one language.
+/// Folders are shared by both languages' episodes, so a folder that only has
+/// Chinese episodes (or only English ones) is hidden in the other language.
+enum FolderVisibility {
+    static func hasEpisodes(
+        named seriesName: String, type: MediaType, language: ContentLanguage,
+        items: [MediaItem], seriesInfo: [PodcastSeriesInfo]
+    ) -> Bool {
+        if items.contains(where: { $0.series == seriesName && $0.type == type && $0.language == language }) {
+            return true
+        }
+        return seriesInfo.filter { $0.parent == seriesName }.contains {
+            hasEpisodes(named: $0.name, type: type, language: language, items: items, seriesInfo: seriesInfo)
         }
     }
 }

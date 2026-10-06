@@ -73,6 +73,42 @@
         }
       }
     },
+    " folder": {
+      "comment": "Suffix for a non-Bible parent folder's sub-folder count, e.g. \"2 folders\"",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " folder"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "个文件夹"
+          }
+        }
+      }
+    },
+    " folders": {
+      "comment": "Suffix for a non-Bible parent folder's sub-folder count, e.g. \"2 folders\"",
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " folders"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "个文件夹"
+          }
+        }
+      }
+    },
     "A new version of this app is available. Please update to continue.": {
       "comment": "Body text of the full-screen update-required gate",
       "extractionState": "stale",

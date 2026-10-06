@@ -19,11 +19,16 @@ struct PodcastFolderCard: View {
     let speaker: String?
     let episodes: [MediaItem]
     var childCount: Int? = nil
+    /// Pre-Study's sub-folders are Bible books; any other parent (e.g. a hymn
+    /// folder) just holds folders.
+    var childrenAreBooks = true
 
     @ViewBuilder
     private var subtitle: some View {
         if let childCount {
-            Text(verbatim: "\(childCount)") + Text(childCount == 1 ? " book" : " books")
+            Text(verbatim: "\(childCount)") + (childrenAreBooks
+                ? Text(childCount == 1 ? " book" : " books")
+                : Text(childCount == 1 ? " folder" : " folders"))
         } else if episodes.isEmpty {
             Text("No episodes yet")
         } else if let speaker, !speaker.isEmpty {
@@ -97,7 +102,7 @@ struct PodcastSeriesEpisodesView: View {
     @AppStorage(appLanguageStorageKey) private var appLanguage: String = "en"
 
     private var children: [PodcastSeriesInfo] {
-        repository.subSeries(of: seriesName)
+        repository.subSeries(of: seriesName, type: mediaType, appLanguage: appLanguage)
     }
 
     private var episodes: [MediaItem] {

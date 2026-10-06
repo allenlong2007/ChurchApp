@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T07:02:48Z",
+  "updatedAt": "2026-10-06T23:34:51Z",
   "series": [
     {
       "name": "Abide in Christ",
@@ -29,7 +29,9 @@
       "name": "Morning Watch Guide",
       "parent": null,
       "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fmorning-watch-guide-author.png?alt=media",
-      "speaker": "Newman Sze"
+      "speaker": "Newman Sze",
+      "nameZh": "晨更指引",
+      "speakerZh": "史伯诚"
     },
     {
       "name": "Boys and Girls",
@@ -83,7 +85,22 @@
       "name": "Songs of our Generation",
       "parent": null,
       "imageURL": null,
-      "speaker": null
+      "speaker": null,
+      "nameZh": "我们时代的诗歌"
+    },
+    {
+      "name": "Brother Newman Sze",
+      "parent": "Songs of our Generation",
+      "imageURL": null,
+      "speaker": null,
+      "nameZh": "史伯诚"
+    },
+    {
+      "name": "Others",
+      "parent": "Songs of our Generation",
+      "imageURL": null,
+      "speaker": null,
+      "nameZh": "其他"
     },
     {
       "name": "Our Life Story",
@@ -292,7 +309,7 @@
     {
       "id": "p015",
       "type": "podcast",
-      "title": "What is Man 01 All",
+      "title": "01 Man’s High Prospect and Destiny (Part 1)",
       "speaker": "T. Austin-Sparks",
       "series": "What is Man",
       "category": null,
@@ -321,7 +338,7 @@
       "id": "p017",
       "type": "podcast",
       "title": "#4 宝血的能力与认罪的必须",
-      "speaker": "Newman Sze",
+      "speaker": "史伯诚",
       "series": "Morning Watch Guide",
       "category": null,
       "dateAdded": "2026-08-25T22:09:59Z",
@@ -335,7 +352,7 @@
       "id": "p018",
       "type": "podcast",
       "title": "#5 进入交通",
-      "speaker": "Newman Sze",
+      "speaker": "史伯诚",
       "series": "Morning Watch Guide",
       "category": null,
       "dateAdded": "2026-08-25T22:10:00Z",
@@ -349,7 +366,7 @@
       "id": "p019",
       "type": "podcast",
       "title": "#6 读经",
-      "speaker": "Newman Sze",
+      "speaker": "史伯诚",
       "series": "Morning Watch Guide",
       "category": null,
       "dateAdded": "2026-08-25T22:10:01Z",
@@ -363,7 +380,7 @@
       "id": "p020",
       "type": "podcast",
       "title": "#7 代祷",
-      "speaker": "Newman Sze",
+      "speaker": "史伯诚",
       "series": "Morning Watch Guide",
       "category": null,
       "dateAdded": "2026-08-25T22:10:02Z",
@@ -377,7 +394,7 @@
       "id": "p021",
       "type": "podcast",
       "title": "#3 奉献顺服",
-      "speaker": "Newman Sze",
+      "speaker": "史伯诚",
       "series": "Morning Watch Guide",
       "category": null,
       "dateAdded": "2026-08-25T22:10:03Z",
@@ -391,7 +408,7 @@
       "id": "p022",
       "type": "podcast",
       "title": "#1 晨更的重要",
-      "speaker": "Newman Sze",
+      "speaker": "史伯诚",
       "series": "Morning Watch Guide",
       "category": null,
       "dateAdded": "2026-08-25T22:10:04Z",
@@ -405,7 +422,7 @@
       "id": "p023",
       "type": "podcast",
       "title": "#2 如何守晨更",
-      "speaker": "Newman Sze",
+      "speaker": "史伯诚",
       "series": "Morning Watch Guide",
       "category": null,
       "dateAdded": "2026-08-25T22:10:05Z",
@@ -558,7 +575,7 @@
     {
       "id": "p037",
       "type": "podcast",
-      "title": "人物1",
+      "title": "人物1 亚伯拉罕",
       "speaker": null,
       "series": "Genesis",
       "category": "人物",
@@ -572,7 +589,7 @@
     {
       "id": "p038",
       "type": "podcast",
-      "title": "人物2",
+      "title": "人物2 以撒",
       "speaker": null,
       "series": "Genesis",
       "category": "人物",
@@ -586,7 +603,7 @@
     {
       "id": "p039",
       "type": "podcast",
-      "title": "人物3",
+      "title": "人物3 雅各",
       "speaker": null,
       "series": "Genesis",
       "category": "人物",
@@ -600,7 +617,7 @@
     {
       "id": "p040",
       "type": "podcast",
-      "title": "人物4",
+      "title": "人物4 约瑟",
       "speaker": null,
       "series": "Genesis",
       "category": "人物",
@@ -614,7 +631,7 @@
     {
       "id": "p042",
       "type": "podcast",
-      "title": "诸事的根源1",
+      "title": "诸事的根源1 神 创造的原则",
       "speaker": null,
       "series": "Genesis",
       "category": "诸事的根源",
@@ -628,7 +645,7 @@
     {
       "id": "p043",
       "type": "podcast",
-      "title": "诸事的根源2",
+      "title": "诸事的根源2 人的被造",
       "speaker": null,
       "series": "Genesis",
       "category": "诸事的根源",
@@ -642,7 +659,7 @@
     {
       "id": "p044",
       "type": "podcast",
-      "title": "诸事的根源3",
+      "title": "诸事的根源3 人成了罪人",
       "speaker": null,
       "series": "Genesis",
       "category": "诸事的根源",
@@ -656,7 +673,7 @@
     {
       "id": "p045",
       "type": "podcast",
-      "title": "诸事的根源4",
+      "title": "诸事的根源4 人类社会 文化的开始",
       "speaker": null,
       "series": "Genesis",
       "category": "诸事的根源",
@@ -699,8 +716,8 @@
       "id": "n001",
       "type": "hymn",
       "title": "#353 至高者的隐密处",
-      "speaker": "Newman Sze",
-      "series": "Songs of our Generation",
+      "speaker": "史伯诚",
+      "series": "Brother Newman Sze",
       "category": "Song of our Generation",
       "dateAdded": "2026-08-28T02:38:17Z",
       "durationSeconds": null,
@@ -714,7 +731,7 @@
       "type": "hymn",
       "title": "SOR184 Go With Your Will",
       "speaker": null,
-      "series": "Songs of our Generation",
+      "series": "Others",
       "category": "Song of our Generation",
       "dateAdded": "2026-08-28T02:38:17Z",
       "durationSeconds": null,
@@ -726,7 +743,7 @@
     {
       "id": "v001",
       "type": "video",
-      "title": "Interview with Ted and Jenny",
+      "title": "Interview with Ted and Jenny 3/14/2026",
       "speaker": null,
       "series": "Our Life Story",
       "category": null,
@@ -735,12 +752,12 @@
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/videos%2Four-life-story-ted-and-jenny.m4v?alt=media",
       "imageURL": null,
       "language": "en",
-      "order": null
+      "order": 0
     },
     {
       "id": "v002",
       "type": "video",
-      "title": "Interview with Ted and Jenny",
+      "title": "访谈 石轩综/戴玉珍 3/14/2026",
       "speaker": null,
       "series": "Our Life Story",
       "category": null,
@@ -749,7 +766,7 @@
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/videos%2Four-life-story-ted-and-jenny.m4v?alt=media",
       "imageURL": null,
       "language": "zh",
-      "order": null
+      "order": 0
     },
     {
       "id": "p051",
@@ -964,7 +981,7 @@
     {
       "id": "p066",
       "type": "podcast",
-      "title": "01 第一段 道成肉身 (9 11)",
+      "title": "01 第一段 道成肉身 (1-8)",
       "speaker": null,
       "series": "The Octave of Redemption",
       "category": null,
@@ -978,7 +995,7 @@
     {
       "id": "p067",
       "type": "podcast",
-      "title": "02 第一段 道成肉身 (9 11)",
+      "title": "02 第一段 道成肉身 (9-11)",
       "speaker": null,
       "series": "The Octave of Redemption",
       "category": null,
@@ -992,7 +1009,7 @@
     {
       "id": "p068",
       "type": "podcast",
-      "title": "03 第二段 主在地上的生活 (1 5)",
+      "title": "03 第二段 主在地上的生活 (1-5)",
       "speaker": null,
       "series": "The Octave of Redemption",
       "category": null,
@@ -1006,7 +1023,7 @@
     {
       "id": "p069",
       "type": "podcast",
-      "title": "04 第二段 主在地上的生活 (6 7)",
+      "title": "04 第二段 主在地上的生活 (6-7)",
       "speaker": null,
       "series": "The Octave of Redemption",
       "category": null,
@@ -1020,7 +1037,7 @@
     {
       "id": "p070",
       "type": "podcast",
-      "title": "05 第三段 十字架 (1 5)",
+      "title": "05 第三段 十字架 (1-5)",
       "speaker": null,
       "series": "The Octave of Redemption",
       "category": null,
@@ -1076,7 +1093,7 @@
     {
       "id": "p074",
       "type": "podcast",
-      "title": "09 第四段 复活后的四十天(1 3)",
+      "title": "09 第四段 复活后的四十天(1-3)",
       "speaker": null,
       "series": "The Octave of Redemption",
       "category": null,
@@ -1090,7 +1107,7 @@
     {
       "id": "p075",
       "type": "podcast",
-      "title": "10 第四段 复活后的四十天 (4 5)",
+      "title": "10 第四段 复活后的四十天 (4-5)",
       "speaker": null,
       "series": "The Octave of Redemption",
       "category": null,
@@ -2035,7 +2052,7 @@
       "dateAdded": "2026-10-04T05:20:37Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp138-25.-Sweet-and-White.mp3?alt=media",
-      "imageURL": null,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fboys-and-girls--en.jpg?alt=media",
       "language": "en",
       "order": null
     },
@@ -2077,9 +2094,135 @@
       "dateAdded": "2026-10-06T06:49:27Z",
       "durationSeconds": null,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp041-04-%E4%BA%BA%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%B8%8E%E5%8E%9F%E5%88%9D%E7%A5%9E%E6%89%80%E5%88%9B%E9%80%A0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%97%8F%E7%B1%BB-%EF%BC%88%E4%B8%AD%EF%BC%89.mp3?alt=media",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fwhat-is-man--zh.jpg?alt=media",
+      "language": "zh",
+      "order": null
+    },
+    {
+      "id": "n003",
+      "type": "hymn",
+      "title": "#353 Within His Secret Place I Hide",
+      "speaker": "Newman Sze",
+      "series": "Brother Newman Sze",
+      "category": "Song of our Generation",
+      "dateAdded": "2026-10-06T23:18:54Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/hymns%2Fhymn353-%E8%87%B3%E9%AB%98%E8%80%85%E7%9A%84%E9%9A%B1%E5%AF%86%E8%99%95.mp4?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "n004",
+      "type": "hymn",
+      "title": "SOR184 照祢旨意",
+      "speaker": null,
+      "series": "Others",
+      "category": "Song of our Generation",
+      "dateAdded": "2026-10-06T23:18:54Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/hymns%2Fsor184-go-with-your-will.mp4?alt=media",
       "imageURL": null,
       "language": "zh",
       "order": null
+    },
+    {
+      "id": "p139",
+      "type": "podcast",
+      "title": "02 Man’s High Prospect and Destiny (Part 2)",
+      "speaker": null,
+      "series": "What is Man",
+      "category": null,
+      "dateAdded": "2026-10-06T23:26:38Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp139-02-Man%E2%80%99s-High-Prospect-and-Destiny-%28Part-2%29.mp3?alt=media",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fwhat-is-man--en.jpg?alt=media",
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "p140",
+      "type": "podcast",
+      "title": "03 Man Now Another Species Than God Created Part 1",
+      "speaker": null,
+      "series": "What is Man",
+      "category": null,
+      "dateAdded": "2026-10-06T23:26:40Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp140-03-Man-Now-Another-Species-Than-God-Created-Part-1.mp3?alt=media",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fwhat-is-man--en.jpg?alt=media",
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "p141",
+      "type": "podcast",
+      "title": "04 Man Now Another Species Than God Created Part 2",
+      "speaker": null,
+      "series": "What is Man",
+      "category": null,
+      "dateAdded": "2026-10-06T23:26:45Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/podcasts%2Fp141-04-Man-Now-Another-Species-Than-God-Created-Part-2.mp3?alt=media",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/covers%2Fwhat-is-man--en.jpg?alt=media",
+      "language": "en",
+      "order": null
+    },
+    {
+      "id": "v003",
+      "type": "video",
+      "title": "Testimony of Elan's Mother 3/4/2025",
+      "speaker": null,
+      "series": "Our Life Story",
+      "category": null,
+      "dateAdded": "2026-10-06T23:33:53Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/videos%2Fv003-testimony-of-elans-mother.mp4?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": 1
+    },
+    {
+      "id": "v004",
+      "type": "video",
+      "title": "Elan 母亲的见证 3/4/2025",
+      "speaker": null,
+      "series": "Our Life Story",
+      "category": null,
+      "dateAdded": "2026-10-06T23:33:53Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/videos%2Fv003-testimony-of-elans-mother.mp4?alt=media",
+      "imageURL": null,
+      "language": "zh",
+      "order": 1
+    },
+    {
+      "id": "v005",
+      "type": "video",
+      "title": "Interview with Sister Fran, October 2022",
+      "speaker": null,
+      "series": "Our Life Story",
+      "category": null,
+      "dateAdded": "2026-10-06T23:34:51Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/videos%2Fv005-interview-with-sister-fran.mp4?alt=media",
+      "imageURL": null,
+      "language": "en",
+      "order": 2
+    },
+    {
+      "id": "v006",
+      "type": "video",
+      "title": "访谈 Fran 姊妹 October 2022",
+      "speaker": null,
+      "series": "Our Life Story",
+      "category": null,
+      "dateAdded": "2026-10-06T23:34:51Z",
+      "durationSeconds": null,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/church-app2-7779d.firebasestorage.app/o/videos%2Fv005-interview-with-sister-fran.mp4?alt=media",
+      "imageURL": null,
+      "language": "zh",
+      "order": 2
     }
   ]
 }

@@ -117,3 +117,48 @@ struct BundledManifestTests {
         #expect(!manifest.items.matchingAppLanguage("zh-Hans").isEmpty)
     }
 }
+
+struct FolderVisibilityTests {
+    private static func episode(_ id: String, series: String, language: ContentLanguage, type: MediaType = .podcast) -> MediaItem {
+        MediaItem(
+            id: id, type: type, title: id, speaker: nil, series: series, category: nil,
+            dateAdded: "2026-01-01T00:00:00Z", durationSeconds: nil,
+            audioURL: "https://example.com/\(id).mp3", imageURL: nil, language: language, order: nil
+        )
+    }
+
+    private static func folder(_ name: String, parent: String? = nil) -> PodcastSeriesInfo {
+        PodcastSeriesInfo(name: name, parent: parent, imageURL: nil, speaker: nil, nameZh: nil, speakerZh: nil)
+    }
+
+    private let folders = [Self.folder("Pre-Study"), Self.folder("Genesis", parent: "Pre-Study"), Self.folder("Exodus", parent: "Pre-Study"), Self.folder("Kids")]
+
+    private var items: [MediaItem] {
+        [
+            Self.episode("g1", series: "Genesis", language: .zh),
+            Self.episode("e1", series: "Exodus", language: .en),
+            Self.episode("e2", series: "Exodus", language: .zh),
+            Self.episode("k1", series: "Kids", language: .en),
+        ]
+    }
+
+    @Test func folderWithOnlyChineseEpisodesIsHiddenInEnglish() {
+        #expect(!FolderVisibility.hasEpisodes(named: "Genesis", type: .podcast, language: .en, items: items, seriesInfo: folders))
+        #expect(FolderVisibility.hasEpisodes(named: "Genesis", type: .podcast, language: .zh, items: items, seriesInfo: folders))
+    }
+
+    @Test func folderWithOnlyEnglishEpisodesIsHiddenInChinese() {
+        #expect(!FolderVisibility.hasEpisodes(named: "Kids", type: .podcast, language: .zh, items: items, seriesInfo: folders))
+        #expect(FolderVisibility.hasEpisodes(named: "Kids", type: .podcast, language: .en, items: items, seriesInfo: folders))
+    }
+
+    @Test func parentFolderCountsEpisodesInItsSubFolders() {
+        #expect(FolderVisibility.hasEpisodes(named: "Pre-Study", type: .podcast, language: .en, items: items, seriesInfo: folders))
+        let onlyGenesis = [Self.episode("g1", series: "Genesis", language: .zh)]
+        #expect(!FolderVisibility.hasEpisodes(named: "Pre-Study", type: .podcast, language: .en, items: onlyGenesis, seriesInfo: folders))
+    }
+
+    @Test func mediaTypeMustMatchToo() {
+        #expect(!FolderVisibility.hasEpisodes(named: "Exodus", type: .hymn, language: .en, items: items, seriesInfo: folders))
+    }
+}
